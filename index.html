@@ -1075,7 +1075,7 @@
     // ===============================
     // API BACKEND (Google Apps Script)
     // ===============================
-    const API_URL = "https://script.google.com/macros/s/AKfycbzghEWyhkhM2qcyfQ9v9VJORWXBc_-UkLC3FwnqdgrrbtvKj_75x-BP5MogTREXt2DI9w/exec";
+    const API_URL = "https://script.google.com/macros/s/AKfycby3lrbbh0JjEyIexEKRZ2bVI6gjZHS_Qms0SKp8CMYMf0aDP07vL6lRR_QCxZwnfmbaZQ/exec";
 
     async function api(action, payload = {}) {
       try {
@@ -2148,7 +2148,11 @@ function updateSortIcons(activeKey, direction) {
       }).then((result) => {
         if (result.isConfirmed) {
           showLoading(true);
-          api("changeStatusFromButton", { id: id, statusBaru: newStatus })
+          api("changeStatusFromButton", {
+            id: id,
+            statusBaru: newStatus,
+            requesterUid: currentUser.uid
+          })
             .then(res => {
               showLoading(false);
               if(res.success) { Swal.fire('Berhasil', res.message, 'success'); loadFasilitasi(); }
