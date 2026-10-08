@@ -3,7 +3,7 @@
  * Backend Logic (Google Apps Script)
  */
 
-const SPREADSHEET_ID = ""; // Kosongkan jika script terikat pada sheet
+const SPREADSHEET_ID = "1lvQqRt1ZbVrUgMU2NrHEmuSCBgAB5RXzqg5NqMPI5Sc"; // Kosongkan jika script terikat pada sheet
 const SHEET_NAME = "Profil";
 const SHEET_FASILITASI = "Fasilitasi";
 const SHEET_OPTION = "Option";
