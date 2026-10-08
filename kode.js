@@ -2,6 +2,8 @@
  * Sirupat - Fasilitasi Penggunaan Ruang Rapat Kantor DPD RI KALTIM
  * Backend Logic (Google Apps Script)
  */
+const SCRIPT_URL =
+    "https://script.google.com/macros/s/AKfycbxVNa6Y2v0au9kVNA-Erc7flodt_Sf3WowAQikYqihrFLQE-LokKTsKdX4v2aFpiibNXw/exec";
 
 const SPREADSHEET_ID = "1lvQqRt1ZbVrUgMU2NrHEmuSCBgAB5RXzqg5NqMPI5Sc"; // Kosongkan jika script terikat pada sheet
 const SHEET_NAME = "Profil";
